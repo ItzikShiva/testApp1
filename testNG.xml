@@ -10,6 +10,9 @@
     <test name = "sanity">
         <classes>
             <class name="API.petStore.CreatePetTests"/>
+            <class name="API.petStore.UpdatePetTests"/>
+            <class name="API.petStore.UserTests"/>
+            <class name="API.petStore.StoreTests"/>
         </classes>
     </test>
 </suite>

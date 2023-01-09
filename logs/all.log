@@ -30,3 +30,80 @@
 2023-01-04 18:12:12,015 WARN U.p.u.UserTests [main] Warning accrued at 2023-01-04T18:12:12.015129700
 2023-01-04 18:12:12,016 ERROR U.p.u.UserTests [main] Error accrued at 2023-01-04T18:12:12.016462800
 2023-01-04 18:12:12,017 FATAL U.p.u.UserTests [main] Serious problem with car Login in accrued at 2023-01-04T18:12:12.017515400
+2023-01-08 16:43:08,140 DEBUG a.a.EmailTests [main] email response body:
+absproj.email.api.EmailResponse@2d36e77e
+2023-01-08 16:43:08,150 DEBUG a.a.EmailTests [main] Some debug log
+2023-01-08 16:43:08,170 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T16:43:08.167
+2023-01-08 16:43:08,173 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T16:43:08.173
+2023-01-08 16:43:08,173 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T16:43:08.173
+2023-01-08 16:43:58,768 DEBUG a.a.EmailTests [main] email response body:
+absproj.email.api.EmailResponse@2d36e77e
+2023-01-08 16:43:58,775 DEBUG a.a.EmailTests [main] Some debug log
+2023-01-08 16:43:58,796 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T16:43:58.791
+2023-01-08 16:43:58,797 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T16:43:58.797
+2023-01-08 16:43:58,797 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T16:43:58.797
+2023-01-08 16:52:57,208 DEBUG a.a.EmailTests [main] email response body:
+true
+2023-01-08 16:52:57,217 DEBUG a.a.EmailTests [main] Some debug log
+2023-01-08 16:52:57,244 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T16:52:57.241
+2023-01-08 16:52:57,247 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T16:52:57.247
+2023-01-08 16:52:57,247 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T16:52:57.247
+2023-01-08 17:08:32,513 DEBUG a.a.EmailTests [main] Some debug log
+2023-01-08 17:08:32,538 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T17:08:32.535
+2023-01-08 17:08:32,540 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T17:08:32.539
+2023-01-08 17:08:32,540 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T17:08:32.540
+2023-01-08 17:53:03,279 DEBUG a.a.EmailTests [main] Some debug log
+2023-01-08 17:53:03,308 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T17:53:03.303
+2023-01-08 17:53:03,310 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T17:53:03.310
+2023-01-08 17:53:03,310 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T17:53:03.310
+2023-01-08 17:57:20,779 DEBUG a.a.EmailTests [main] got valid email response
+2023-01-08 17:57:20,798 DEBUG a.a.EmailTests [main] got DELIVERABLE email
+2023-01-08 17:57:20,799 DEBUG a.a.EmailTests [main] got valid email format
+2023-01-08 17:57:20,818 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T17:57:20.814
+2023-01-08 17:57:20,819 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T17:57:20.819
+2023-01-08 17:57:20,820 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T17:57:20.819
+2023-01-08 18:00:48,240 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 18:00:48,267 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 18:00:48,267 INFO a.a.EmailTests [main] got valid email format
+2023-01-08 18:00:48,291 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T18:00:48.289
+2023-01-08 18:00:48,293 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T18:00:48.292
+2023-01-08 18:00:48,293 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T18:00:48.293
+2023-01-08 18:12:51,540 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 18:12:51,564 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 18:12:51,564 INFO a.a.EmailTests [main] got valid email format
+2023-01-08 18:29:16,312 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 18:29:16,339 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 18:29:16,340 INFO a.a.EmailTests [main] got valid email format
+2023-01-08 18:39:26,833 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 18:46:47,933 INFO a.a.EmailTests [main] got "UNDELIVERABLE" success result
+2023-01-08 19:28:01,984 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:28:02,009 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 19:31:01,588 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:31:01,607 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 19:32:07,771 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:32:07,793 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 19:32:39,107 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:32:39,126 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 19:32:46,349 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:32:46,373 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 19:33:22,022 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:33:30,284 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:33:42,570 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:34:14,172 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:41:13,942 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-08 19:41:13,961 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-08 19:41:13,961 INFO a.a.EmailTests [main] got valid email format
+2023-01-09 09:20:44,615 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-09 09:20:44,636 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-09 09:20:44,636 INFO a.a.EmailTests [main] got valid email format
+2023-01-09 09:34:02,533 INFO a.a.EmailTests [main] got emaptyEmailTest - success
+2023-01-09 09:34:02,547 INFO a.a.EmailTests [main] {"error":{"message":"A validation error occurred.","code":"validation_error","details":{"email":["This is a required argument."]}}}
+2023-01-09 10:03:23,117 INFO a.a.EmailTests [main] got emaptyEmailTest - success
+2023-01-09 10:04:39,477 INFO a.a.EmailTests [main] got emaptyEmailTest - success
+2023-01-09 10:05:00,736 INFO a.a.EmailTests [main] got emaptyEmailTest - success
+2023-01-09 10:16:36,796 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-09 10:16:36,815 INFO a.a.EmailTests [main] got valid DELIVERABLE email
+2023-01-09 10:16:36,815 INFO a.a.EmailTests [main] got valid email format
+2023-01-09 10:16:59,791 INFO a.a.EmailTests [main] got emaptyEmailTest - success
+2023-01-09 10:16:59,811 INFO a.a.EmailTests [main] got error massage - success
+2023-01-09 10:23:37,774 INFO a.a.EmailTests [main] got valid email response from server
