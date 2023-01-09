@@ -1,10 +1,9 @@
-package absproj.api;
+package absproj.email.api;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
@@ -13,20 +12,8 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.google.gson.Gson;
-
-import UI.petStore.user.DashboardPage;
-import UI.petStore.user.LoginPage;
-import UI.petStore.user.UserService;
-import UI.petStore.user.UserTests;
-import absproj.email.api.EmailErrorResponse;
-import absproj.email.api.EmailResponse;
-import absproj.email.api.EmailService;
 
 public class EmailTests extends EmailUtils {
 	private static final Logger logger = LogManager.getLogger(EmailTests.class);
@@ -82,7 +69,7 @@ public class EmailTests extends EmailUtils {
 		assertEquals(httpResponse.getStatusLine().getStatusCode(), 400);
 		logger.info("got emaptyEmailTest - success");
 
-		EmailErrorResponse emailErrorResponse = httpResponseToObj(httpResponse, EmailErrorResponse.class);
+		ErrorResponse emailErrorResponse = httpResponseToObj(httpResponse, ErrorResponse.class);
 		assertEquals(emailErrorResponse.getError().getDetails().getEmail().get(0), "This is a required argument.");
 		logger.info("got error massage - success");
 	}

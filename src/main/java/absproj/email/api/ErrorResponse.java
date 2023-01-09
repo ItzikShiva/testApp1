@@ -1,6 +1,6 @@
 package absproj.email.api;
 
-public class EmailErrorResponse {
+public class ErrorResponse {
 
 	public ErrorRes error;
 

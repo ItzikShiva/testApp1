@@ -1,4 +1,4 @@
-package absproj.api;
+package absproj.email.api;
 
 import com.google.gson.Gson;
 
