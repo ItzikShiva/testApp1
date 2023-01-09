@@ -23,9 +23,6 @@ public class UserTests {
     static WebDriver driver = new ChromeDriver();
     static LoginPage loginPage = new LoginPage(driver);
     static String basgeURI = "https://petstore.octoperf.com/actions/Account.action?signonForm=";
-    //ASK - i read online, but still, why i cant write here the next lines??
-//	driver.get("https://petstore.octoperf.com/actions/Account.action?signonForm=");
-
 
     @Test
     public static void loginValidTest() throws InterruptedException {
