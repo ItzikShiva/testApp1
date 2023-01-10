@@ -107,3 +107,25 @@ true
 2023-01-09 10:16:59,791 INFO a.a.EmailTests [main] got emaptyEmailTest - success
 2023-01-09 10:16:59,811 INFO a.a.EmailTests [main] got error massage - success
 2023-01-09 10:23:37,774 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-09 16:41:51,724 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-09 18:03:32,547 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-09 18:17:55,854 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-09 18:18:10,496 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-09 18:21:00,879 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:49:41,908 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:49:41,933 INFO a.h.a.HolidaysTests [main] myPojos.size()2
+2023-01-10 09:50:00,932 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:53:14,682 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:53:14,700 INFO a.h.a.HolidaysTests [main] myPojos.size()2
+2023-01-10 09:53:14,700 INFO a.h.a.HolidaysTests [main] got valid HolidaysResponse
+2023-01-10 09:54:11,370 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:54:11,388 INFO a.h.a.HolidaysTests [main] myPojos.size()2
+2023-01-10 09:54:11,388 INFO a.h.a.HolidaysTests [main] got valid HolidaysResponse
+2023-01-10 09:54:57,320 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:59:26,172 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 09:59:26,192 INFO a.h.a.HolidaysTests [main] myPojos.size()2
+2023-01-10 09:59:26,192 INFO a.h.a.HolidaysTests [main] got valid HolidaysResponse
+2023-01-10 10:01:08,888 INFO a.h.a.HolidaysTests [main] got valid email response from server
+2023-01-10 10:01:08,904 INFO a.h.a.HolidaysTests [main] myPojos.size()0
+2023-01-10 10:01:08,904 INFO a.h.a.HolidaysTests [main] got valid HolidaysResponse
+2023-01-10 10:08:32,233 INFO a.h.a.HolidaysTests [main] got invalidApiKeyTest - success
