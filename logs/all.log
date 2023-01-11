@@ -107,3 +107,19 @@ true
 2023-01-09 10:16:59,791 INFO a.a.EmailTests [main] got emaptyEmailTest - success
 2023-01-09 10:16:59,811 INFO a.a.EmailTests [main] got error massage - success
 2023-01-09 10:23:37,774 INFO a.a.EmailTests [main] got valid email response from server
+2023-01-09 11:44:14,396 INFO a.s.a.ScreenshotTests [main] got valid email response from server
+2023-01-09 11:54:07,681 INFO a.s.a.ScreenshotTests [main] got valid email response from server
+2023-01-09 12:01:10,903 INFO a.s.a.ScreenshotTests [main] got valid image response from server
+2023-01-09 12:11:08,135 INFO a.s.a.ScreenshotTests [main] got valid image response from server
+2023-01-09 12:15:41,713 INFO a.e.a.EmailTests [main] got emaptyEmailTest - success
+2023-01-09 12:15:41,736 INFO a.e.a.EmailTests [main] got error massage - success
+2023-01-09 12:18:10,938 INFO a.s.a.ScreenshotTests [main] got invalidApiKeyTest - success
+2023-01-09 12:23:48,112 INFO a.s.a.ScreenshotTests [main] got invalidUrlTest - success
+2023-01-09 12:24:31,671 INFO a.s.a.ScreenshotTests [main] got invalidUrlTest - success
+2023-01-09 12:26:20,981 INFO a.s.a.ScreenshotTests [main] got invalidUrlTest - success
+2023-01-09 12:26:20,997 INFO a.s.a.ScreenshotTests [main] got "Enter a valid URL." success result
+2023-01-09 12:39:43,101 INFO a.s.a.ScreenshotTests [main] got emaptyEmailTest_2 - success
+2023-01-09 12:39:43,120 INFO a.s.a.ScreenshotTests [main] got "Reached error page" success result
+2023-01-09 12:43:04,372 INFO a.s.a.ScreenshotTests [main] got emaptyEmailTest - success
+2023-01-09 12:43:04,388 INFO a.s.a.ScreenshotTests [main] got "This field may not be blank." massage - success
+2023-01-09 12:43:22,182 INFO a.s.a.ScreenshotTests [main] got invalidApiKeyTest - success
