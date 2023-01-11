@@ -17,6 +17,7 @@
 			<class name="app.petstore.api.UpdatePetTests" />
 			<class name="app.petstore.api.UserTests" />
 			<class name="app.petstore.api.StoreTests" />
+			<class name="app.petstore.user.ui.UserTests" />
 		</classes>
 	</test>
 </suite>
