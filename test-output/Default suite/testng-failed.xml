@@ -3,20 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="app.absproj.api.NegativeEmailTests">
         <methods>
           <include name="before_test"/>
           <include name="invalidEmailTest"/>
         </methods>
       </class> <!-- app.absproj.api.NegativeEmailTests -->
-=======
-      <class name="absproj.screenshot.api.ScreenshotTests">
-        <methods>
-          <include name="invalidUrlTest"/>
-        </methods>
-      </class> <!-- absproj.screenshot.api.ScreenshotTests -->
->>>>>>> main
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

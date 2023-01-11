@@ -1,4 +1,4 @@
-package absproj.screenshot.api;
+package app.absproj.screenshot.api;
 
 import java.io.File;
 import java.io.FileNotFoundException;

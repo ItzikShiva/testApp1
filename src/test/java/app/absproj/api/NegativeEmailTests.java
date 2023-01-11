@@ -11,8 +11,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import absproj.email.api.EmailErrorResponse;
 import absproj.email.api.EmailResponse;
+import absproj.email.api.ErrorResponse;
 
 public class NegativeEmailTests extends EmailBaseTest {
 	private static final Logger logger = LogManager.getLogger(NegativeEmailTests.class);
@@ -27,12 +27,12 @@ public class NegativeEmailTests extends EmailBaseTest {
 		assertEquals(httpResponse.getStatusLine().getStatusCode(), 401);
 		logger.info("got 401 response from server");
 
-		EmailErrorResponse emailErrorResponse = httpResponseToObj(httpResponse, EmailErrorResponse.class);
-		assertEquals(emailErrorResponse.getError().getMessage(), "Invalid API key provided.");
+		ErrorResponse errorResponse = httpResponseToObj(httpResponse, ErrorResponse.class);
+		assertEquals(errorResponse.getError().getMessage(), "Invalid API key provided.");
 		logger.info("Invalid API key provided");
-		assertEquals(emailErrorResponse.getError().getCode(), "unauthorized");
+		assertEquals(errorResponse.getError().getCode(), "unauthorized");
 		logger.info("unauthorized request");
-		assertEquals(emailErrorResponse.getError().getDetails(), null);
+		assertEquals(errorResponse.getError().getDetails(), null);
 		logger.info("no details..");
 	}
 
@@ -86,8 +86,8 @@ public class NegativeEmailTests extends EmailBaseTest {
 		logger.info("got 400 response from server");
 
 		//ASK - hod, this looks like assertion that including other or should i check all the fields?
-		EmailErrorResponse emailErrorResponse = httpResponseToObj(httpResponse, EmailErrorResponse.class);
-		assertEquals(emailErrorResponse.getError().getDetails().getEmail().get(0), "This is a required argument.");
+		ErrorResponse errorResponse = httpResponseToObj(httpResponse, ErrorResponse.class);
+		assertEquals(errorResponse.getError().getDetails().getEmail().get(0), "This is a required argument.");
 		logger.info("got error massage ");
 	}
 }

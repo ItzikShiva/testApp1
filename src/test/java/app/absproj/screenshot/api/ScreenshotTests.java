@@ -1,4 +1,4 @@
-package absproj.screenshot.api;
+package app.absproj.screenshot.api;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
