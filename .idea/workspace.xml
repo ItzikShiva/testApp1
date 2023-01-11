@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="454a36cf-a299-4ebd-b9e1-9b46ba574d75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/logs/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/important.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/important.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/EmailResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/absproj/email/api/EmailResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/absproj/email/api/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/facebook/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/facebook/FacebookBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/facebook/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/facebook/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/absproj/api/EmailParams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/absproj/api/EmailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/absproj/api/EmailTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/absproj/api/EmailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/absproj/api/EmailBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/API/facebook/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/API/facebook/UserTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/API/facebook/UserTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2K8KVcH0rkDdvGKhVBpQ9ffXlqk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/projects/testApp1",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="454a36cf-a299-4ebd-b9e1-9b46ba574d75" name="Changes" comment="" />
+      <created>1673350804192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673350804192</updated>
+      <workItem from="1673350807048" duration="372000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
