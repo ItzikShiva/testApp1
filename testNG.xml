@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="testngpackage" parallel="methods">
 	<!--    <test name="testngTest">-->
 	<!--        <classes>-->
@@ -8,17 +7,16 @@
 	<!--        </classes>-->
 	<!--    </test>-->
 	<listeners>
-		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 	<test name="sanity">
 		<classes>
-			<class name="app.absproj.api.NegativeEmailTests.java" />
-			<class name="API.petStore.CreatePetTests" />
-			<class name="API.petStore.UpdatePetTests" />
-			<class name="API.petStore.UserTests" />
-			<class name="API.petStore.StoreTests" />
+			<class name="app.absproj.api.NegativeEmailTests" />
+			<class name="app.petstore.api.CreatePetTests" />
+			<class name="app.petstore.api.UpdatePetTests" />
+			<class name="app.petstore.api.UserTests" />
+			<class name="app.petstore.api.StoreTests" />
 		</classes>
 	</test>
-	
 </suite>
-

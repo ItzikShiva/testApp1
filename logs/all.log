@@ -135,3 +135,23 @@ true
 2023-01-11 11:33:35,936 INFO a.a.a.NegativeEmailTests [main] no details..
 2023-01-11 11:33:56,919 INFO a.a.a.NegativeEmailTests [main] got 400 response from server
 2023-01-11 11:33:56,948 INFO a.a.a.NegativeEmailTests [main] got error massage 
+2023-01-11 11:52:26,195 INFO a.a.a.NegativeEmailTests [main] got 400 response from server
+2023-01-11 11:52:26,215 INFO a.a.a.NegativeEmailTests [main] got error massage 
+2023-01-11 11:52:27,815 INFO a.a.a.NegativeEmailTests [main] got 401 response from server
+2023-01-11 11:52:27,816 INFO a.a.a.NegativeEmailTests [main] Invalid API key provided
+2023-01-11 11:52:27,816 INFO a.a.a.NegativeEmailTests [main] unauthorized request
+2023-01-11 11:52:27,816 INFO a.a.a.NegativeEmailTests [main] no details..
+2023-01-11 12:10:53,834 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] got 401 response from server
+2023-01-11 12:10:53,848 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] Invalid API key provided
+2023-01-11 12:10:53,849 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] unauthorized request
+2023-01-11 12:10:53,849 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] no details..
+2023-01-11 12:17:14,183 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] got 401 response from server
+2023-01-11 12:17:14,198 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] Invalid API key provided
+2023-01-11 12:17:14,199 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] unauthorized request
+2023-01-11 12:17:14,199 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] no details..
+2023-01-11 12:22:48,608 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] got 401 response from server
+2023-01-11 12:22:48,622 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] Invalid API key provided
+2023-01-11 12:22:48,622 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] unauthorized request
+2023-01-11 12:22:48,622 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-2] no details..
+2023-01-11 12:34:22,033 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-1] got 400 response from server
+2023-01-11 12:34:22,048 INFO a.a.a.NegativeEmailTests [TestNG-test=sanity-1] got error massage 
