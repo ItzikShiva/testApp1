@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-API_facebook_BaseTest" class="navigator-link">
-              <span class="suite-name border-passed">API.facebook.BaseTest</span>
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-API_facebook_BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,7 +92,110 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">17 methods, 8 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.CreatePetTests" class="method navigator-link" hash-for-method="createPetWithDuplicateID">createPetWithDuplicateID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.CreatePetTests" class="method navigator-link" hash-for-method="createPetWithEmptyObject">createPetWithEmptyObject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.CreatePetTests" class="method navigator-link" hash-for-method="createPetWithoutID">createPetWithoutID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.StoreTests" class="method navigator-link" hash-for-method="getInventory">getInventory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.facebook.api.UserTests" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.user.ui.UserTests" class="method navigator-link" hash-for-method="loginValidTest">loginValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.facebook.api.UserTests" class="method navigator-link" hash-for-method="metadata">metadata</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.UpdatePetTests" class="method navigator-link" hash-for-method="uploadPetImageByID">uploadPetImageByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.CreatePetTests" class="method navigator-link" hash-for-method="createPet">createPet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.CreatePetTests" class="method navigator-link" hash-for-method="createPetWithUnsupportedMediaType">createPetWithUnsupportedMediaType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.UserTests" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.absproj.api.EmailTests" class="method navigator-link" hash-for-method="emailValidationTest">emailValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.absproj.api.NegativeEmailTests" class="method navigator-link" hash-for-method="emptyEmailTest">emptyEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.absproj.api.NegativeEmailTests" class="method navigator-link" hash-for-method="invalidApiKeyTest">invalidApiKeyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.absproj.api.NegativeEmailTests" class="method navigator-link" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.user.ui.UserTests" class="method navigator-link" hash-for-method="loginNotValidTest">loginNotValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="app.petstore.api.UpdatePetTests" class="method navigator-link" hash-for-method="updatePet">updatePet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,88 +206,581 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-API_facebook_BaseTest" class="panel API_facebook_BaseTest">
-        </div> <!-- panel API_facebook_BaseTest -->
-        <div panel-name="test-xml-API_facebook_BaseTest" class="panel">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">app.petstore.user.ui.UserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginValidTest">
+                  </a> <!-- loginValidTest -->
+                  <span class="method-name">loginValidTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1be893ca674dba73034f56c834ecb328, get {url=https://petstore.octoperf.com/actions/Account.action?signonForm=}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ITZIKV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53983/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1be893ca674dba73034f56c834ecb328
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at app.petstore.user.ui.UserTests.loginValidTest(UserTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">app.petstore.api.UpdatePetTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadPetImageByID">
+                  </a> <!-- uploadPetImageByID -->
+                  <span class="method-name">uploadPetImageByID</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\itzik vaknin\Downloads\ג€�ג€�check.jpg (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at org.apache.http.entity.mime.content.FileBody.writeTo(FileBody.java:116)
+	at org.apache.http.entity.mime.AbstractMultipartForm.doWriteTo(AbstractMultipartForm.java:134)
+	at org.apache.http.entity.mime.AbstractMultipartForm.writeTo(AbstractMultipartForm.java:157)
+	at org.apache.http.entity.mime.MultipartFormEntity.writeTo(MultipartFormEntity.java:113)
+	at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestEntity(DefaultBHttpClientConnection.java:156)
+	at org.apache.http.impl.conn.CPoolProxy.sendRequestEntity(CPoolProxy.java:152)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at API.petStore.pet.PetService.uploadPetImageByID(PetService.java:46)
+	at app.petstore.api.UpdatePetTests.uploadPetImageByID(UpdatePetTests.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">app.petstore.api.StoreTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getInventory">
+                  </a> <!-- getInventory -->
+                  <span class="method-name">getInventory</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [4] but found [7]
+	at app.petstore.api.StoreTests.getInventory(StoreTests.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">app.facebook.api.UserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at app.facebook.api.UserTests.login(UserTests.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="metadata">
+                  </a> <!-- metadata -->
+                  <span class="method-name">metadata</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;API.facebook.user.Metadata.getFields()&quot; because the return value of &quot;API.facebook.user.GetMetadataResponse.getMetadata()&quot; is null
+	at app.facebook.api.UserTests.metadata(UserTests.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">app.petstore.api.CreatePetTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPetWithDuplicateID">
+                  </a> <!-- createPetWithDuplicateID -->
+                  <span class="method-name">createPetWithDuplicateID</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [409] but found [200]
+	at app.petstore.api.CreatePetTests.createPetWithDuplicateID(CreatePetTests.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPetWithEmptyObject">
+                  </a> <!-- createPetWithEmptyObject -->
+                  <span class="method-name">createPetWithEmptyObject</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at app.petstore.api.CreatePetTests.createPetWithEmptyObject(CreatePetTests.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPetWithoutID">
+                  </a> <!-- createPetWithoutID -->
+                  <span class="method-name">createPetWithoutID</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at app.petstore.api.CreatePetTests.createPetWithoutID(CreatePetTests.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.petstore.user.ui.UserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginNotValidTest">
+                  </a> <!-- loginNotValidTest -->
+                  <span class="method-name">loginNotValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.absproj.api.NegativeEmailTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyEmailTest">
+                  </a> <!-- emptyEmailTest -->
+                  <span class="method-name">emptyEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidApiKeyTest">
+                  </a> <!-- invalidApiKeyTest -->
+                  <span class="method-name">invalidApiKeyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailTest">
+                  </a> <!-- invalidEmailTest -->
+                  <span class="method-name">invalidEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.petstore.api.UpdatePetTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePet">
+                  </a> <!-- updatePet -->
+                  <span class="method-name">updatePet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.absproj.api.EmailTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailValidationTest">
+                  </a> <!-- emailValidationTest -->
+                  <span class="method-name">emailValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.petstore.api.UserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser">
+                  </a> <!-- createUser -->
+                  <span class="method-name">createUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.petstore.api.CreatePetTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPet">
+                  </a> <!-- createPet -->
+                  <span class="method-name">createPet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPetWithUnsupportedMediaType">
+                  </a> <!-- createPetWithUnsupportedMediaType -->
+                  <span class="method-name">createPetWithUnsupportedMediaType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;API.facebook.BaseTest&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;API.facebook.BaseTest&quot;/&gt;
+      &lt;class name=&quot;app.absproj.api.EmailBaseTest&quot;/&gt;
+      &lt;class name=&quot;app.absproj.api.EmailTests&quot;/&gt;
+      &lt;class name=&quot;app.absproj.api.NegativeEmailTests&quot;/&gt;
+      &lt;class name=&quot;app.BaseTest&quot;/&gt;
+      &lt;class name=&quot;app.facebook.api.FacebookBaseTest&quot;/&gt;
+      &lt;class name=&quot;app.facebook.api.UserTests&quot;/&gt;
+      &lt;class name=&quot;app.petstore.api.CreatePetTests&quot;/&gt;
+      &lt;class name=&quot;app.petstore.api.StoreTests&quot;/&gt;
+      &lt;class name=&quot;app.petstore.api.UpdatePetTests&quot;/&gt;
+      &lt;class name=&quot;app.petstore.api.UserTests&quot;/&gt;
+      &lt;class name=&quot;app.petstore.user.ui.UserTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- API.facebook.BaseTest --&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-API_facebook_BaseTest" class="panel">
+        <div panel-name="testlist-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for API.facebook.BaseTest</span>
+            <span class="header-content">Tests for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (1 class)</span>
+                <span class="test-name">Surefire test (11 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-API_facebook_BaseTest" class="panel">
+        <div panel-name="group-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for API.facebook.BaseTest</span>
+            <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-API_facebook_BaseTest" class="panel">
+        <div panel-name="times-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for API.facebook.BaseTest</span>
+            <span class="header-content">Times for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_API_facebook_BaseTest');
-function tableData_API_facebook_BaseTest() {
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
-window.suiteTableData['API_facebook_BaseTest']= { tableData: data, tableDiv: 'times-div-API_facebook_BaseTest'}
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginNotValidTest')
+data.setCell(0, 2, 'app.petstore.user.ui.UserTests')
+data.setCell(0, 3, 2526);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createUser')
+data.setCell(1, 2, 'app.petstore.api.UserTests')
+data.setCell(1, 3, 2417);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'uploadPetImageByID')
+data.setCell(2, 2, 'app.petstore.api.UpdatePetTests')
+data.setCell(2, 3, 1839);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'emailValidationTest')
+data.setCell(3, 2, 'app.absproj.api.EmailTests')
+data.setCell(3, 3, 1602);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createPet')
+data.setCell(4, 2, 'app.petstore.api.CreatePetTests')
+data.setCell(4, 3, 1360);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'updatePet')
+data.setCell(5, 2, 'app.petstore.api.UpdatePetTests')
+data.setCell(5, 3, 1226);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createPetWithDuplicateID')
+data.setCell(6, 2, 'app.petstore.api.CreatePetTests')
+data.setCell(6, 3, 1207);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'emptyEmailTest')
+data.setCell(7, 2, 'app.absproj.api.NegativeEmailTests')
+data.setCell(7, 3, 655);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidEmailTest')
+data.setCell(8, 2, 'app.absproj.api.NegativeEmailTests')
+data.setCell(8, 3, 642);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getInventory')
+data.setCell(9, 2, 'app.petstore.api.StoreTests')
+data.setCell(9, 3, 640);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidApiKeyTest')
+data.setCell(10, 2, 'app.absproj.api.NegativeEmailTests')
+data.setCell(10, 3, 629);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createPetWithUnsupportedMediaType')
+data.setCell(11, 2, 'app.petstore.api.CreatePetTests')
+data.setCell(11, 3, 620);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createPetWithEmptyObject')
+data.setCell(12, 2, 'app.petstore.api.CreatePetTests')
+data.setCell(12, 3, 591);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createPetWithoutID')
+data.setCell(13, 2, 'app.petstore.api.CreatePetTests')
+data.setCell(13, 3, 589);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'metadata')
+data.setCell(14, 2, 'app.facebook.api.UserTests')
+data.setCell(14, 3, 495);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'login')
+data.setCell(15, 2, 'app.facebook.api.UserTests')
+data.setCell(15, 3, 375);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginValidTest')
+data.setCell(16, 2, 'app.petstore.user.ui.UserTests')
+data.setCell(16, 3, 100);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-API_facebook_BaseTest">
-              </div> <!-- times-div-API_facebook_BaseTest -->
+              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-API_facebook_BaseTest" class="panel">
+        <div panel-name="reporter-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for API.facebook.BaseTest</span>
+            <span class="header-content">Reporter output for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createPetWithUnsupportedMediaType</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">created Pet With Empty Object</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">updatePet</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">update pet success</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-API_facebook_BaseTest" class="panel">
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-API_facebook_BaseTest" class="panel">
+        <div panel-name="chronological-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.absproj.api.EmailTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">before_test</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">emailValidationTest</span>
+                <span class="method-start">1315 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.absproj.api.NegativeEmailTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">before_test</span>
+                <span class="method-start">2947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">emptyEmailTest</span>
+                <span class="method-start">3952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">before_test</span>
+                <span class="method-start">4612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidApiKeyTest</span>
+                <span class="method-start">5617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">before_test</span>
+                <span class="method-start">6250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailTest</span>
+                <span class="method-start">7267 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.facebook.api.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">7913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">metadata</span>
+                <span class="method-start">8302 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.petstore.api.CreatePetTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPet</span>
+                <span class="method-start">8802 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createPetWithDuplicateID</span>
+                <span class="method-start">10165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createPetWithEmptyObject</span>
+                <span class="method-start">11377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPetWithUnsupportedMediaType</span>
+                <span class="method-start">11972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createPetWithoutID</span>
+                <span class="method-start">12596 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.petstore.api.StoreTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getInventory</span>
+                <span class="method-start">13190 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.petstore.api.UpdatePetTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updatePet</span>
+                <span class="method-start">13836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadPetImageByID</span>
+                <span class="method-start">15065 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.petstore.api.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createUser</span>
+                <span class="method-start">16909 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.petstore.user.ui.UserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginNotValidTest</span>
+                <span class="method-start">19329 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginValidTest</span>
+                <span class="method-start">21867 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

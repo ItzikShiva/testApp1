@@ -1,8 +1,12 @@
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\facebook\UserTests.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\petStore\StoreTests.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\petStore\CreatePetTests.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\petStore\UpdatePetTests.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\UI\petStore\user\UserTests.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\facebook\AppParams.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\facebook\BaseTest.java
-C:\Users\itzik vaknin\eclipse-workspace\RESTProject\src\test\java\API\petStore\UserTests.java
+C:\projects\testApp1\src\test\java\app\absproj\api\EmailBaseTest.java
+C:\projects\testApp1\src\test\java\app\petstore\api\UpdatePetTests.java
+C:\projects\testApp1\src\test\java\app\absproj\api\EmailTests.java
+C:\projects\testApp1\src\test\java\app\facebook\api\UserTests.java
+C:\projects\testApp1\src\test\java\app\facebook\api\FacebookBaseTest.java
+C:\projects\testApp1\src\test\java\app\facebook\api\AppParams.java
+C:\projects\testApp1\src\test\java\app\petstore\api\CreatePetTests.java
+C:\projects\testApp1\src\test\java\app\petstore\api\StoreTests.java
+C:\projects\testApp1\src\test\java\app\petstore\user\ui\UserTests.java
+C:\projects\testApp1\src\test\java\app\absproj\api\NegativeEmailTests.java
+C:\projects\testApp1\src\test\java\app\BaseTest.java
+C:\projects\testApp1\src\test\java\app\petstore\api\UserTests.java

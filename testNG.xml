@@ -2,17 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="testngpackage" parallel="methods">
-<!--    <test name="testngTest">-->
-<!--        <classes>-->
-<!--            <class name="rest.client.proj.EmailReport"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name = "sanity">
-        <classes>
-            <class name="API.petStore.CreatePetTests"/>
-            <class name="API.petStore.UpdatePetTests"/>
-            <class name="API.petStore.UserTests"/>
-            <class name="API.petStore.StoreTests"/>
-        </classes>
-    </test>
+	<!--    <test name="testngTest">-->
+	<!--        <classes>-->
+	<!--            <class name="rest.client.proj.EmailReport"/>-->
+	<!--        </classes>-->
+	<!--    </test>-->
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+	</listeners>
+	<test name="sanity">
+		<classes>
+			<class name="app.absproj.api.NegativeEmailTests.java" />
+			<class name="API.petStore.CreatePetTests" />
+			<class name="API.petStore.UpdatePetTests" />
+			<class name="API.petStore.UserTests" />
+			<class name="API.petStore.StoreTests" />
+		</classes>
+	</test>
+	
 </suite>
+
