@@ -43,3 +43,6 @@
 2023-01-08 18:00:48,291 WARN a.a.EmailTests [main] Warning accrued at 2023-01-08T18:00:48.289
 2023-01-08 18:00:48,293 ERROR a.a.EmailTests [main] Error accrued at 2023-01-08T18:00:48.292
 2023-01-08 18:00:48,293 FATAL a.a.EmailTests [main] Serious problem with car Login in accrued at 2023-01-08T18:00:48.293
+2023-01-10 13:03:04,529 WARN U.p.u.UserTests [main] Warning accrued at 2023-01-10T13:03:04.529329400
+2023-01-10 13:03:04,531 ERROR U.p.u.UserTests [main] Error accrued at 2023-01-10T13:03:04.531170300
+2023-01-10 13:03:04,531 FATAL U.p.u.UserTests [main] Serious problem with car Login in accrued at 2023-01-10T13:03:04.531847400

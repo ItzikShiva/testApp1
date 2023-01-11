@@ -8,30 +8,84 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">testngpackage</th></tr>
-<tr><td><a href="#t0">sanity</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">2,196</td><td></td><td></td></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">22,115</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">testngpackage</th></tr></tbody><tbody id="t0"><tr><th colspan="4">sanity &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">API.petStore.CreatePetTests</td><td><a href="#m0">createPetWithDuplicateID</a></td><td rowspan="1">1672909280046</td><td rowspan="1">2040</td></tr><tr class="failedeven"><td><a href="#m1">createPetWithEmptyObject</a></td><td rowspan="1">1672909280046</td><td rowspan="1">1477</td></tr><tr class="failedeven"><td><a href="#m2">createPetWithoutID</a></td><td rowspan="1">1672909280046</td><td rowspan="1">1477</td></tr><tr><th colspan="4">sanity &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">API.petStore.CreatePetTests</td><td><a href="#m3">createPet</a></td><td rowspan="1">1672909280046</td><td rowspan="1">2126</td></tr><tr class="passedeven"><td><a href="#m4">createPetWithUnsupportedMediaType</a></td><td rowspan="1">1672909280046</td><td rowspan="1">1463</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">app.facebook.api.UserTests</td><td><a href="#m0">login</a></td><td rowspan="1">1673422775058</td><td rowspan="1">375</td></tr><tr class="failedeven"><td><a href="#m1">metadata</a></td><td rowspan="1">1673422775447</td><td rowspan="1">495</td></tr><tr class="failedodd"><td rowspan="3">app.petstore.api.CreatePetTests</td><td><a href="#m2">createPetWithDuplicateID</a></td><td rowspan="1">1673422777310</td><td rowspan="1">1207</td></tr><tr class="failedodd"><td><a href="#m3">createPetWithEmptyObject</a></td><td rowspan="1">1673422778522</td><td rowspan="1">591</td></tr><tr class="failedodd"><td><a href="#m4">createPetWithoutID</a></td><td rowspan="1">1673422779741</td><td rowspan="1">589</td></tr><tr class="failedeven"><td rowspan="1">app.petstore.api.StoreTests</td><td><a href="#m5">getInventory</a></td><td rowspan="1">1673422780335</td><td rowspan="1">640</td></tr><tr class="failedodd"><td rowspan="1">app.petstore.api.UpdatePetTests</td><td><a href="#m6">uploadPetImageByID</a></td><td rowspan="1">1673422782210</td><td rowspan="1">1839</td></tr><tr class="failedeven"><td rowspan="1">app.petstore.user.ui.UserTests</td><td><a href="#m7">loginValidTest</a></td><td rowspan="1">1673422789012</td><td rowspan="1">100</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">app.absproj.api.EmailTests</td><td><a href="#m8">emailValidationTest</a></td><td rowspan="1">1673422768460</td><td rowspan="1">1602</td></tr><tr class="passedodd"><td rowspan="3">app.absproj.api.NegativeEmailTests</td><td><a href="#m9">emptyEmailTest</a></td><td rowspan="1">1673422771097</td><td rowspan="1">655</td></tr><tr class="passedodd"><td><a href="#m10">invalidApiKeyTest</a></td><td rowspan="1">1673422772762</td><td rowspan="1">629</td></tr><tr class="passedodd"><td><a href="#m11">invalidEmailTest</a></td><td rowspan="1">1673422774412</td><td rowspan="1">642</td></tr><tr class="passedeven"><td rowspan="2">app.petstore.api.CreatePetTests</td><td><a href="#m12">createPet</a></td><td rowspan="1">1673422775947</td><td rowspan="1">1360</td></tr><tr class="passedeven"><td><a href="#m13">createPetWithUnsupportedMediaType</a></td><td rowspan="1">1673422779117</td><td rowspan="1">620</td></tr><tr class="passedodd"><td rowspan="1">app.petstore.api.UpdatePetTests</td><td><a href="#m14">updatePet</a></td><td rowspan="1">1673422780981</td><td rowspan="1">1226</td></tr><tr class="passedeven"><td rowspan="1">app.petstore.api.UserTests</td><td><a href="#m15">createUser</a></td><td rowspan="1">1673422784054</td><td rowspan="1">2417</td></tr><tr class="passedodd"><td rowspan="1">app.petstore.user.ui.UserTests</td><td><a href="#m16">loginNotValidTest</a></td><td rowspan="1">1673422786474</td><td rowspan="1">2526</td></tr></tbody>
 </table>
-<h2>sanity</h2><h3 id="m0">API.petStore.CreatePetTests#createPetWithDuplicateID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [409] but found [200]
-	at API.petStore.CreatePetTests.createPetWithDuplicateID(CreatePetTests.java:98)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">API.petStore.CreatePetTests#createPetWithEmptyObject</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [400] but found [200]
-	at API.petStore.CreatePetTests.createPetWithEmptyObject(CreatePetTests.java:118)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">API.petStore.CreatePetTests#createPetWithoutID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [400] but found [200]
-	at API.petStore.CreatePetTests.createPetWithoutID(CreatePetTests.java:70)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">API.petStore.CreatePetTests#createPet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">API.petStore.CreatePetTests#createPetWithUnsupportedMediaType</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">created Pet With Empty Object</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">app.facebook.api.UserTests#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [400]
+	at app.facebook.api.UserTests.login(UserTests.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">app.facebook.api.UserTests#metadata</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;API.facebook.user.Metadata.getFields()&quot; because the return value of &quot;API.facebook.user.GetMetadataResponse.getMetadata()&quot; is null
+	at app.facebook.api.UserTests.metadata(UserTests.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">app.petstore.api.CreatePetTests#createPetWithDuplicateID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [409] but found [200]
+	at app.petstore.api.CreatePetTests.createPetWithDuplicateID(CreatePetTests.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">app.petstore.api.CreatePetTests#createPetWithEmptyObject</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [400] but found [200]
+	at app.petstore.api.CreatePetTests.createPetWithEmptyObject(CreatePetTests.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">app.petstore.api.CreatePetTests#createPetWithoutID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [400] but found [200]
+	at app.petstore.api.CreatePetTests.createPetWithoutID(CreatePetTests.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">app.petstore.api.StoreTests#getInventory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [4] but found [7]
+	at app.petstore.api.StoreTests.getInventory(StoreTests.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">app.petstore.api.UpdatePetTests#uploadPetImageByID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\itzik vaknin\Downloads\ג€�ג€�check.jpg (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at org.apache.http.entity.mime.content.FileBody.writeTo(FileBody.java:116)
+	at org.apache.http.entity.mime.AbstractMultipartForm.doWriteTo(AbstractMultipartForm.java:134)
+	at org.apache.http.entity.mime.AbstractMultipartForm.writeTo(AbstractMultipartForm.java:157)
+	at org.apache.http.entity.mime.MultipartFormEntity.writeTo(MultipartFormEntity.java:113)
+	at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestEntity(DefaultBHttpClientConnection.java:156)
+	at org.apache.http.impl.conn.CPoolProxy.sendRequestEntity(CPoolProxy.java:152)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at API.petStore.pet.PetService.uploadPetImageByID(PetService.java:46)
+	at app.petstore.api.UpdatePetTests.uploadPetImageByID(UpdatePetTests.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">app.petstore.user.ui.UserTests#loginValidTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1be893ca674dba73034f56c834ecb328, get {url=https://petstore.octoperf.com/actions/Account.action?signonForm=}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ITZIKV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53983/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1be893ca674dba73034f56c834ecb328
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at app.petstore.user.ui.UserTests.loginValidTest(UserTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">app.absproj.api.EmailTests#emailValidationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">app.absproj.api.NegativeEmailTests#emptyEmailTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">app.absproj.api.NegativeEmailTests#invalidApiKeyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">app.absproj.api.NegativeEmailTests#invalidEmailTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">app.petstore.api.CreatePetTests#createPet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">app.petstore.api.CreatePetTests#createPetWithUnsupportedMediaType</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">created Pet With Empty Object</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">app.petstore.api.UpdatePetTests#updatePet</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">update pet success</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">app.petstore.api.UserTests#createUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">app.petstore.user.ui.UserTests#loginNotValidTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -7,7 +7,7 @@ public class EmailResponse {
 	public String quality_score;
 	public IsClass is_catchall_email;
 	public IsClass is_disposable_email;
-	public IsClass is_Free_email;
+	public IsClass is_free_email;
 	public IsClass is_mx_found;
 	public IsClass is_role_email;
 	public IsClass is_smtp_valid;
@@ -30,8 +30,8 @@ public class EmailResponse {
 	public IsClass getIs_disposable_email() {
 		return is_disposable_email;
 	}
-	public IsClass getIs_Free_email() {
-		return is_Free_email;
+	public IsClass getIs_free_email() {
+		return is_free_email;
 	}
 	public IsClass getIs_mx_found() {
 		return is_mx_found;

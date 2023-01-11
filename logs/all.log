@@ -123,3 +123,15 @@ true
 2023-01-09 12:43:04,372 INFO a.s.a.ScreenshotTests [main] got emaptyEmailTest - success
 2023-01-09 12:43:04,388 INFO a.s.a.ScreenshotTests [main] got "This field may not be blank." massage - success
 2023-01-09 12:43:22,182 INFO a.s.a.ScreenshotTests [main] got invalidApiKeyTest - success
+2023-01-11 11:32:29,020 INFO a.a.a.NegativeEmailTests [main] got 401 response from server
+2023-01-11 11:32:29,049 INFO a.a.a.NegativeEmailTests [main] Invalid API key provided
+2023-01-11 11:32:29,049 INFO a.a.a.NegativeEmailTests [main] unauthorized request
+2023-01-11 11:32:29,049 INFO a.a.a.NegativeEmailTests [main] no details..
+2023-01-11 11:33:34,250 INFO a.a.a.NegativeEmailTests [main] got 400 response from server
+2023-01-11 11:33:34,286 INFO a.a.a.NegativeEmailTests [main] got error massage 
+2023-01-11 11:33:35,935 INFO a.a.a.NegativeEmailTests [main] got 401 response from server
+2023-01-11 11:33:35,936 INFO a.a.a.NegativeEmailTests [main] Invalid API key provided
+2023-01-11 11:33:35,936 INFO a.a.a.NegativeEmailTests [main] unauthorized request
+2023-01-11 11:33:35,936 INFO a.a.a.NegativeEmailTests [main] no details..
+2023-01-11 11:33:56,919 INFO a.a.a.NegativeEmailTests [main] got 400 response from server
+2023-01-11 11:33:56,948 INFO a.a.a.NegativeEmailTests [main] got error massage 
