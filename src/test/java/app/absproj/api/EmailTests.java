@@ -20,13 +20,17 @@ public class EmailTests extends EmailBaseTest {
 
 	@Test
 	public static void emailValidationTest() throws InterruptedException, ClientProtocolException, IOException {
-
 		CloseableHttpResponse httpResponse = emailService.getEmailValidation(valid_email);
 		assertEquals(httpResponse.getStatusLine().getStatusCode(), 200);
 		logger.info("got 200 response from server");
 
 		EmailResponse emailResponse = httpResponseToObj(httpResponse, EmailResponse.class);
-		assertEquals(emailResponse.getEmail() , valid_email);
+		//HOD - i can put line 28 inside next func as parameter. but will be less readability, what is your opinion?
+		emailValidationTestAssertions(emailResponse);
+	}
+
+	private static void emailValidationTestAssertions(EmailResponse emailResponse) {
+		assertEquals(emailResponse.getEmail(), valid_email);
 		logger.info("got valid email");
 		assertEquals(emailResponse.getDeliverability(), "DELIVERABLE");
 		logger.info("got valid DELIVERABLE email");
@@ -42,16 +46,13 @@ public class EmailTests extends EmailBaseTest {
 		logger.info("got valid \"is_role_email\": false ");
 		assertEquals(emailResponse.getIs_catchall_email().getValue(), false);
 		logger.info("got valid \"is_catchall_email\": false ");
-		assertEquals(emailResponse.getAutocorrect() , "");
+		assertEquals(emailResponse.getAutocorrect(), "");
 		logger.info("got valid autocorrect \"\" ");
 		assertTrue(emailResponse.getIs_mx_found().getValue());
 		logger.info("got valid is_mx_found");
 		assertTrue(emailResponse.getIs_smtp_valid().getValue());
 		logger.info("got valid is_smtp_valid");
-
-
 	}
-
 }
 
 //logger.info("Car2: " + car2);

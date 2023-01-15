@@ -11,9 +11,9 @@ public class EmailBaseTest extends BaseTest {
 
 	static EmailService emailService = new EmailService();
 
-//	@BeforeTest // annotated method placed in the beginning.
+	//This sleep is for prevent 429 error(too many requests)
 	@BeforeMethod
-	public void before_test() throws InterruptedException {
+	public void before_test_method() throws InterruptedException {
 		Thread.sleep(1000);
 	}
 
