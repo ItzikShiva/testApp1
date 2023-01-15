@@ -1,22 +1,26 @@
 package app.petstore.user.ui;
 
+import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 
-import org.apache.logging.log4j.core.config.Configurator;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 
 import UI.petStore.user.DashboardPage;
 import UI.petStore.user.LoginPage;
-import UI.petStore.user.UserService;
+
 
 public class UserTests {
     //TODO - ask what is "final", it works also without
@@ -27,16 +31,15 @@ public class UserTests {
     static String basgeURI = "https://petstore.octoperf.com/actions/Account.action?signonForm=";
 
     @Test
-    public static void loginValidTest() throws InterruptedException {
-        //TODO - ASK - GENERAL QUESTIONS - i made this class but not sure if need.. cause the methods are in the POM?
-        UserService userService = new UserService();
+    public static void loginValidTest() throws InterruptedException, IOException {
         driver.get(basgeURI);
-
+        takeScreenshot("1");
         loginPage.setUsername("test11");
         loginPage.setPassword("1234");
-
+        takeScreenshot("2");
         //option 1
         DashboardPage dashboardPage = loginPage.submit();
+        takeScreenshot("3");
         //TODO - ask - in DashboardPage i have constructor(it have to be right? because the Class use the "driver". i ask: i cant call in static way to isLoggedin() whithout constructor here)
         //and you told me maybe to return POM inside another POM (like loginPage).  i did something, option1
 
@@ -59,13 +62,14 @@ public class UserTests {
 
 
     @Test
-    public static void loginNotValidTest() throws InterruptedException {
+    public static void loginNotValidTest() throws InterruptedException  {
         driver.get(basgeURI);
-
+        
         loginPage.setUsername("test111");
         loginPage.setPassword("1234");
-
+        
         DashboardPage dashboardPage = loginPage.submit();
+       
         //TODO - ask - the app is crash here if no dahboardPage, so i did something in isLoggedin(). tell me if it's good
         // Answer - we did findElemnts - toshow hod the null driver inside DashboardPage
 
@@ -73,6 +77,21 @@ public class UserTests {
 
         Thread.sleep(1000);
         driver.close();
+    }
+    
+    
+    public static void takeScreenshot(String name) throws IOException, InterruptedException {
+    	Thread.sleep(1000);
+    	System.setProperty("org.uncommons.reportng.escape-output", "false");
+    	File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+    	String path = System.getProperty("user.dir") + "\\test-output\\screenshots\\" + name + ".png";
+        FileUtils.copyFile(srcFile, new File(path));
+        Reporter.log("<br><img src='" + path + "' height='400' width='400'/> <br>");
+//        logger.log("<a href='" + path + "'> <img src='" + path + "' height='100' width='100'/> </a>");
+
+
+    	
     }
 
 }
