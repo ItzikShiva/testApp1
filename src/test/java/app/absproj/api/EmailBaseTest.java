@@ -3,9 +3,8 @@ package app.absproj.api;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-//import BaseTest;
-import absproj.email.api.EmailService;
 import app.BaseTest;
+import app.absproj.email.api.EmailService;
 
 public class EmailBaseTest extends BaseTest {
 

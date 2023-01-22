@@ -2,7 +2,7 @@ package app.facebook.api;
 
 import com.google.gson.Gson;
 
-import API.facebook.user.UserService;
+import app.facebook.user.api.UserService;
 
 public class FacebookBaseTest {
 	static Gson gson = new Gson();

@@ -11,8 +11,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import absproj.email.api.EmailResponse;
-import absproj.email.api.ErrorResponse;
+import app.absproj.email.api.EmailResponse;
+import app.absproj.email.api.ErrorResponse;
 
 public class NegativeEmailTests extends EmailBaseTest {
 	private static final Logger logger = LogManager.getLogger(NegativeEmailTests.class);
@@ -59,7 +59,7 @@ public class NegativeEmailTests extends EmailBaseTest {
 	}
 
 	private static void invalidEmailTest(EmailResponse emailResponse) {
-		assertTrue(!emailResponse.getAutocorrect().isBlank());
+		assertTrue(!emailResponse.getAutocorrect().isEmpty());
 		logger.info("got valid autocorrect \"\" ");
 
 		assertEquals(emailResponse.getDeliverability(), "UNDELIVERABLE");

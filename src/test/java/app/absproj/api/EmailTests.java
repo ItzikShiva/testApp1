@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 import org.testng.annotations.Test;
 
-import absproj.email.api.EmailResponse;
+import app.absproj.email.api.EmailResponse;
 
 public class EmailTests extends EmailBaseTest {
 	private static final Logger logger = LogManager.getLogger(EmailTests.class);

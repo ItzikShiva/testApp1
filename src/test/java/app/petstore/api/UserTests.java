@@ -13,13 +13,13 @@ import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 
-import API.petStore.pet.Category;
-import API.petStore.pet.CreatePetRequest;
-import API.petStore.pet.CreatePetResponse;
-import API.petStore.pet.PetService;
-import API.petStore.user.CreateUserRequest;
-import API.petStore.user.GetUserResponse;
-import API.petStore.user.UserService;
+import app.petstore.pet.api.Category;
+import app.petstore.pet.api.CreatePetRequest;
+import app.petstore.pet.api.CreatePetResponse;
+import app.petstore.pet.api.PetService;
+import app.petstore.user.api.CreateUserRequest;
+import app.petstore.user.api.GetUserResponse;
+import app.petstore.user.api.UserService;
 
 public class UserTests {
 

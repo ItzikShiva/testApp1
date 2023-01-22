@@ -14,7 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import absproj.email.api.ErrorResponse;
+import app.absproj.email.api.ErrorResponse;
 
 public class ScreenshotTests extends ScreenshotUtils {
 	private static final Logger logger = LogManager.getLogger(ScreenshotTests.class);

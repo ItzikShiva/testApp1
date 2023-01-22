@@ -2,8 +2,8 @@ package app.absproj.screenshot.api;
 
 import com.google.gson.Gson;
 
-import absproj.email.api.EmailService;
-import absproj.screenshot.api.ScreenshotService;
+import app.absproj.email.api.EmailService;
+import app.absproj.screenshot.api.ScreenshotService;
 
 public class ScreenshotUtils {
 	static Gson gson = new Gson();

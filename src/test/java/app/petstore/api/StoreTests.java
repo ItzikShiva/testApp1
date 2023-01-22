@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 
-import API.petStore.store.GetInventoryResponse;
-import API.petStore.store.StoreService;
+import app.petstore.store.api.GetInventoryResponse;
+import app.petstore.store.api.StoreService;
 
 public class StoreTests {
 	@Test
