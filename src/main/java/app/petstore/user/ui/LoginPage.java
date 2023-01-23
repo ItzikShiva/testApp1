@@ -1,4 +1,4 @@
-package app.petstore.user.ui.desktop;
+package app.petstore.user.ui;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,21 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
 
 public class LoginPage {
-	private WebDriver driver;
-
 	@FindBy(name = "username")
-	private WebElement usernameField;
+	public WebElement usernameField;
 
 	@FindBy(name = "password")
-	private WebElement passwordField;
+	public WebElement passwordField;
 
 	@FindBy(name = "signon")
-	private WebElement submitButton;
-
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+	public WebElement submitButton;
 
 	public void setUsername(String username) {
 		usernameField.sendKeys(username);
@@ -33,9 +26,14 @@ public class LoginPage {
 		passwordField.sendKeys(password);
 	}
 
-	public DashboardPage submit() {
-		submitButton.click();
-		return new DashboardPage(this.driver);
+	public LoginPage(AndroidDriver driver) {
+		super();
+		PageFactory.initElements(driver, this);
+	}
+
+	public LoginPage(WebDriver driver) {
+		super();
+		PageFactory.initElements(driver, this);
 	}
 
 }
