@@ -16,8 +16,8 @@ import app.petstore.user.ui.UIUtils;
 import java.io.IOException;
 import java.net.URL;
 
-public class UserTests extends UIUtils {
-	private static final Logger Logger = LogManager.getLogger(UserTests.class);
+public class LoginTests extends UIUtils {
+	private static final Logger Logger = LogManager.getLogger(LoginTests.class);
 
 	private static AndroidDriver driver;
 	private static LoginPageAndroid loginPage;

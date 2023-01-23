@@ -16,9 +16,9 @@ import app.petstore.user.ui.UIUtils;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-public class UserTests extends UIUtils {
+public class LoginTests extends UIUtils {
 
-	private static final Logger logger = LogManager.getLogger(UserTests.class);
+	private static final Logger logger = LogManager.getLogger(LoginTests.class);
 
 	static WebDriver driver = headlessDriver();
 //	static WebDriver driver = new ChromeDriver();
