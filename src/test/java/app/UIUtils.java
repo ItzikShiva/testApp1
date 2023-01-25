@@ -1,17 +1,20 @@
-package app.petstore.user.ui;
+package app;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Base64;
+import java.util.UUID;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Reporter;
 
-import app.BaseTest;
 import io.appium.java_client.android.AndroidDriver;
 
 public class UIUtils extends BaseTest {
@@ -20,6 +23,20 @@ public class UIUtils extends BaseTest {
 	public static void takeScreenshot(String name, AndroidDriver driver) throws IOException, InterruptedException {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		getScreenshot(name, srcFile);
+
+	}
+
+	public static void takeScreenshot(String name, RemoteWebDriver driver) throws InterruptedException, IOException {
+//TODO - not save the file.. talk with Hod
+		String screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+		String path = System.getProperty("user.dir") + "\\test-output\\screenshots\\" + name
+				+ ".png";
+		
+		File screenshotFile = new File(path);
+		FileOutputStream fos = new FileOutputStream(screenshotFile);
+		fos.write(screenshot.getBytes());
+		fos.close();
+		
 	}
 
 	public static void takeScreenshot(String name, WebDriver driver) throws InterruptedException, IOException {

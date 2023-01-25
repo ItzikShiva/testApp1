@@ -10,8 +10,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import app.UIUtils;
 import app.petstore.user.ui.DashboardPage;
-import app.petstore.user.ui.UIUtils;
 
 import java.io.IOException;
 import java.net.URL;

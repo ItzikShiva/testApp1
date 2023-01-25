@@ -1,4 +1,4 @@
-package app.petstore.user.ui.android;
+package app.calculator.ui.android;
 
 import java.io.IOException;
 import java.net.URL;
@@ -8,18 +8,20 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import app.petstore.user.ui.UIUtils;
+import app.UIUtils;
 import io.appium.java_client.android.AndroidDriver;
 
 public class CalcAppTests extends UIUtils {
 	private static final Logger LOGGER = LogManager.getLogger(CalcAppTests.class);
 
-	private static AndroidDriver driver;
+	private static RemoteWebDriver driver;
+//	private static AndroidDriver androidDriver;
 	private static WebElement seven;
 	private static WebElement plus;
 	private static WebElement six;
@@ -33,6 +35,10 @@ public class CalcAppTests extends UIUtils {
 
 	@BeforeTest
 	public void setUp() throws IOException, InterruptedException {
+		// TODO - hod, about the screenshots, i found this: The issue is relevant for
+		// Selenium Java client 4.5.1 and higher (4.5.2 and 4.5.3 for the current
+		// moment). The issue is not reproduced for Selenium Java client 4.5.0 and less.
+		
 		// TODO - hod, is it ok the assert here?(it's not a "test")
 		Assert.assertTrue(checkFileExist(System.getProperty("user.dir") + "\\apk\\SimpleCalculator.apk"));
 		LOGGER.info("APK file was found");
@@ -78,7 +84,7 @@ public class CalcAppTests extends UIUtils {
 		minus.click();
 		seven.click();
 		equal.click();
-		takeScreenshot("minus_test", driver);
+//		takeScreenshot("minus_test", driver);
 		Assert.assertEquals(getResult(), "70");
 		LOGGER.info("minus operation finished");
 		clearResult();
@@ -91,7 +97,7 @@ public class CalcAppTests extends UIUtils {
 		multiply.click();
 		four.click();
 		equal.click();
-		takeScreenshot("multiply_test", driver);
+//		takeScreenshot("multiply_test", driver);
 		Assert.assertEquals(getResult(), "20");
 		LOGGER.info("multiply operation finished");
 		clearResult();
@@ -106,7 +112,7 @@ public class CalcAppTests extends UIUtils {
 		one.click();
 		one.click();
 		equal.click();
-		takeScreenshot("divide_test", driver);
+//		takeScreenshot("divide_test", driver);
 		Assert.assertEquals(getResult(), "5");
 		LOGGER.info("divide operation finished");
 		clearResult();
@@ -121,8 +127,11 @@ public class CalcAppTests extends UIUtils {
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("deviceName", "Android Emulator");
 		capabilities.setCapability("platformVersion", "10.0");
-		capabilities.setCapability("app", System.getProperty("user.dir") + "\\apk\\SimpleCalculator.apk");
 		capabilities.setCapability("automationName", "UiAutomator2");
+//		capabilities.setCapability("app", System.getProperty("user.dir") + "\\apk\\SimpleCalculator.apk");
+		capabilities.setCapability("appPackage", "com.veronicaapps.veronica.simplecalculator");
+		capabilities.setCapability("appActivity", "com.veronicaapps.veronica.simplecalculator.MainActivity");
+
 	}
 
 	// in getElementByID() "driver" comes from class variables

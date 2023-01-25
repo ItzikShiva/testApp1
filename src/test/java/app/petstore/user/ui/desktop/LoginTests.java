@@ -10,8 +10,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
+import app.UIUtils;
 import app.petstore.user.ui.DashboardPage;
-import app.petstore.user.ui.UIUtils;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;

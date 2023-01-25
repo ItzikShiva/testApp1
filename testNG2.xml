@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testngpackage2" parallel="methods">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="petstore-desktop">
+		<packages>
+			<package name="app.petstore.user.ui.desktop" />
+		</packages>
+	</test>
+	<test name="petstore-android">
+		<packages>
+			<package name="app.petstore.user.ui.android" />
+		</packages>
+	</test>
+	<test name="calculator-app-android">
+		<packages>
+			<package name="app.calculator.ui.android" />
+		</packages>
+	</test>
+</suite>

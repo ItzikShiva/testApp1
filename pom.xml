@@ -110,7 +110,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>TestNG.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>
                     -javaagent:"C:\Users\itzik vaknin\.m2\repository\org\aspectj\aspectjweaver\1.9.19/aspectjweaver-1.9.19.jar"
