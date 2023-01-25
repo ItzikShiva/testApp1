@@ -1,5 +1,6 @@
 package app;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.apache.http.HttpEntity;
@@ -18,10 +19,18 @@ public class BaseTest {
 		String jsonStringResponse = EntityUtils.toString(entityResponse);
 		return gson.fromJson(jsonStringResponse, TClass);
 	}
-	
+
 	public static String httpResponseToString(CloseableHttpResponse response) throws ParseException, IOException {
 		HttpEntity entityResponse = response.getEntity();
 		String jsonStringResponse = EntityUtils.toString(entityResponse);
 		return jsonStringResponse;
+	}
+
+	public static boolean checkFileExist(String path) {
+		File f = new File(path);
+		if (f.exists() && !f.isDirectory()) {
+			return true;
+		}
+		return false;
 	}
 }

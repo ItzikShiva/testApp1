@@ -4,7 +4,7 @@
 	<groupId>ParaBankTest</groupId>
 	<artifactId>auto.mate.it</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<dependencies>
+	<dependencies> 
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>

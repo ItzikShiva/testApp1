@@ -5,54 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454a36cf-a299-4ebd-b9e1-9b46ba574d75" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/facebook/user/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/facebook/user/api/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/facebook/user/GetAccessTokenRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/facebook/user/api/GetAccessTokenRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/facebook/user/GetAccessTokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/facebook/user/api/GetAccessTokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/facebook/user/GetMetadataResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/facebook/user/api/GetMetadataResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/facebook/user/Metadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/facebook/user/api/Metadata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/facebook/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/facebook/user/api/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/api/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/CreatePetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/CreatePetRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/CreatePetResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/CreatePetResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/GetPetResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/GetPetResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/PetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/UpdatePetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/UpdatePetRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/pet/UpdatePetResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/pet/api/UpdatePetResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/store/GetInventoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/store/api/GetInventoryResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/store/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/store/api/StoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/user/CreateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/api/CreateUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/user/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/api/CreateUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/user/GetUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/api/GetUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/api/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/petStore/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/api/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/petStore/user/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/ui/desktop/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/petStore/user/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/ui/desktop/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/petStore/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/ui/desktop/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/email/api/Details.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/EmailResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/email/api/EmailResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/email/api/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/ErrorRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/email/api/ErrorRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/email/api/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/email/api/IsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/email/api/IsClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/absproj/screenshot/api/ScreenshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/absproj/screenshot/api/ScreenshotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/absproj/api/EmailBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/absproj/api/EmailBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/absproj/api/EmailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/absproj/api/EmailTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/absproj/api/NegativeEmailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/absproj/api/NegativeEmailTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/absproj/screenshot/api/ScreenshotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/absproj/screenshot/api/ScreenshotTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/absproj/screenshot/api/ScreenshotUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/absproj/screenshot/api/ScreenshotUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/facebook/api/FacebookBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/facebook/api/FacebookBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/facebook/api/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/facebook/api/UserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/petstore/api/CreatePetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/petstore/api/CreatePetTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/petstore/api/StoreTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/petstore/api/StoreTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/petstore/api/UpdatePetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/petstore/api/UpdatePetTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/petstore/api/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/petstore/api/UserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/petstore/user/ui/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/petstore/user/ui/desktop/UserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/petstore/user/ui/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/petstore/user/ui/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,21 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/projects/testApp1",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "emulator",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projects/testApp1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

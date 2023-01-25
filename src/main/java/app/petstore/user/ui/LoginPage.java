@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
 
 public class LoginPage {
+	//TODO find elements instead of using @FindBy !!!!!
 	@FindBy(name = "username")
 	public WebElement usernameField;
 

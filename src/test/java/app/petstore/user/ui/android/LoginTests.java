@@ -27,16 +27,8 @@ public class LoginTests extends UIUtils {
 		// Set up desired capabilities
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("platformName", "Android");
-//		capabilities.setCapability("deviceName", "2772d5000a047ece");
-//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
 		capabilities.setCapability("platformVersion", "10.0");
 		capabilities.setCapability("browserName", "chrome");
-
-//More capabilities
-//        capabilities.setCapability("appPackage", "app.petstore.user.ui");
-//        capabilities.setCapability("appActivity", "app.petstore.user.ui.android");
-//        capabilities.setCapability("app", "C:\\Apps\\android-sdk\\Sample_Android_App-Test_1.0_Apkpure.apk");
-//        capabilities.setCapability("automationName", "UiAutomator2");
 
 		driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 		Logger.info("new AndroidDriver was set-up with capabilities");
@@ -52,10 +44,12 @@ public class LoginTests extends UIUtils {
 	public static void loginValidTest() throws InterruptedException, IOException {
 		loginPage.setUsername("test111");
 		loginPage.setPassword("1234");
+		Logger.info("values for login wat set");
 		takeScreenshot("login-page after set inputs", driver);
 
 		DashboardPage dashboardPage = loginPage.submit();
 		Assert.assertTrue(dashboardPage.getSignoutButton().size() == 1);
+		Logger.info("login success");
 		takeScreenshot("login succesfully", driver);
 	}
 
@@ -63,10 +57,12 @@ public class LoginTests extends UIUtils {
 	public static void loginNotValidTest() throws InterruptedException, IOException {
 		loginPage.setUsername("test11111");
 		loginPage.setPassword("1234");
+		Logger.info("values for NOT Valid login wat set");
 		takeScreenshot("login-page after set inputs", driver);
 
 		DashboardPage dashboardPage = loginPage.submit();
 		Assert.assertTrue(dashboardPage.getSignoutButton().size() == 0);
+		Logger.info("login NOT success");
 		takeScreenshot("login failed", driver);
 	}
 

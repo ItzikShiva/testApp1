@@ -11,9 +11,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
+import app.BaseTest;
 import io.appium.java_client.android.AndroidDriver;
 
-public class UIUtils {
+public class UIUtils extends BaseTest {
 	public static String basgeURI = "https://petstore.octoperf.com/actions/Account.action?signonForm=";
 
 	public static void takeScreenshot(String name, AndroidDriver driver) throws IOException, InterruptedException {
@@ -41,4 +42,5 @@ public class UIUtils {
 		DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-mm-yyyy HH_mm_ss");
 		return myDateObj.format(myFormatObj);
 	}
+
 }
