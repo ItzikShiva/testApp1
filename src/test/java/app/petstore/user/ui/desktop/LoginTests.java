@@ -20,12 +20,13 @@ public class LoginTests extends UIUtils {
 
 	private static final Logger logger = LogManager.getLogger(LoginTests.class);
 
-	static WebDriver driver = headlessDriver();
-//	static WebDriver driver = new ChromeDriver();
+//	static WebDriver driver = headlessDriver();
+	static WebDriver driver = new ChromeDriver();
 	static LoginPageDesktop loginPage = new LoginPageDesktop(driver);
 
 	@Test
 	public static void loginValidTest() throws InterruptedException, IOException {
+		
 		driver.get(basgeURI);
 		takeScreenshot("1", driver);
 		loginPage.setUsername("test111");
@@ -37,13 +38,6 @@ public class LoginTests extends UIUtils {
 
 		Assert.assertTrue(dashboardPage.getSignoutButton().size() == 1);
 
-		// logging
-		logger.debug("Some debug log");
-//        logger.info("dashboardPage isLoggedin: " + dashboardPage.isLoggedin());
-//        logger.info("Car2: " + car2);
-		logger.warn("Warning accrued at " + LocalDateTime.now());
-		logger.error("Error accrued at " + LocalDateTime.now());
-		logger.fatal("Serious problem with car Login in accrued at " + LocalDateTime.now());
 	}
 
 	@Test

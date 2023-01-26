@@ -11,6 +11,7 @@ import org.apache.http.util.EntityUtils;
 import com.google.gson.Gson;
 
 public class BaseTest {
+	
 	public static Gson gson = new Gson();
 
 	public static <T> T httpResponseToObj(CloseableHttpResponse response, Class<T> TClass)
