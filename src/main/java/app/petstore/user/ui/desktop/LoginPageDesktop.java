@@ -6,16 +6,18 @@ import app.petstore.user.ui.DashboardPage;
 import app.petstore.user.ui.LoginPage;
 
 public class LoginPageDesktop extends LoginPage {
-	private WebDriver driver;
 
 	public LoginPageDesktop(WebDriver driver) {
 		super(driver);
-		this.driver = driver;
 	}
 
-	public DashboardPage submit() {
+	@Override
+	public DashboardPage submit(String username, String password) {
+		usernameField.sendKeys(username);
+		passwordField.clear();
+		passwordField.sendKeys(password);
 		submitButton.click();
-		return new DashboardPage(this.driver);
+		return new DashboardPage(driver);
 	}
 
 }

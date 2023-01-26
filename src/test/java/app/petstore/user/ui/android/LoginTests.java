@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -16,58 +17,41 @@ import app.petstore.user.ui.UIUtils;
 import java.io.IOException;
 import java.net.URL;
 
-public class LoginTests extends UIUtils {
-	private static final Logger Logger = LogManager.getLogger(LoginTests.class);
+public class LoginTests {
+	private static final Logger logger = LogManager.getLogger(LoginTests.class);
 
-	private static AndroidDriver driver;
+	private static WebDriver driver;
 	private static LoginPageAndroid loginPage;
 
 	@BeforeTest
 	public void setUp() throws IOException, InterruptedException {
-		// Set up desired capabilities
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("platformName", "Android");
-//		capabilities.setCapability("deviceName", "2772d5000a047ece");
-//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-		capabilities.setCapability("platformVersion", "10.0");
-		capabilities.setCapability("browserName", "chrome");
-
-//More capabilities
-//        capabilities.setCapability("appPackage", "app.petstore.user.ui");
-//        capabilities.setCapability("appActivity", "app.petstore.user.ui.android");
-//        capabilities.setCapability("app", "C:\\Apps\\android-sdk\\Sample_Android_App-Test_1.0_Apkpure.apk");
-//        capabilities.setCapability("automationName", "UiAutomator2");
+		setCapabilities(capabilities);
 
 		driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
-		Logger.info("new AndroidDriver was set-up with capabilities");
+		logger.info("new AndroidDriver was set-up with capabilities");
 
-		// TODO - ask hod if this next lines are correct location?
-		driver.get(basgeURI);
+		driver.get(UIUtils.basgeURI);
 		loginPage = new LoginPageAndroid(driver);
-		Logger.info("got into login page");
-		takeScreenshot("login-page", driver);
+		logger.info("got into login page");
+		UIUtils.takeScreenshot("login-page", driver);
 	}
 
 	@Test
 	public static void loginValidTest() throws InterruptedException, IOException {
-		loginPage.setUsername("test111");
-		loginPage.setPassword("1234");
-		takeScreenshot("login-page after set inputs", driver);
-
-		DashboardPage dashboardPage = loginPage.submit();
-		Assert.assertTrue(dashboardPage.getSignoutButton().size() == 1);
-		takeScreenshot("login succesfully", driver);
+		UIUtils.takeScreenshot("login-page before valid inputs", driver);
+		DashboardPage dashboardPage = loginPage.submit("test111", "1234");
+		Assert.assertTrue(dashboardPage.isSignoutButtonExist());
+		UIUtils.takeScreenshot("login succesfully", driver);
 	}
 
 	@Test
 	public static void loginNotValidTest() throws InterruptedException, IOException {
-		loginPage.setUsername("test11111");
-		loginPage.setPassword("1234");
-		takeScreenshot("login-page after set inputs", driver);
-
-		DashboardPage dashboardPage = loginPage.submit();
-		Assert.assertTrue(dashboardPage.getSignoutButton().size() == 0);
-		takeScreenshot("login failed", driver);
+		UIUtils.takeScreenshot("login-page before not valid inputs", driver);
+		logger.info("login-page before not valid inputs");
+		DashboardPage dashboardPage = loginPage.submit("test11111", "1234");
+		Assert.assertTrue(dashboardPage.isSignoutButtonExist());
+		UIUtils.takeScreenshot("login failed", driver);
 	}
 
 	@AfterTest
@@ -75,4 +59,9 @@ public class LoginTests extends UIUtils {
 		driver.quit();
 	}
 
+	private static void setCapabilities(DesiredCapabilities capabilities) {
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("platformVersion", "10.0");
+		capabilities.setCapability("browserName", "chrome");
+	}
 }
