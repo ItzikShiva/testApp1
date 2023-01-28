@@ -2,26 +2,34 @@ package app.petstore.user.ui.android;
 
 import io.appium.java_client.android.AndroidDriver;
 
+import org.apache.http.client.ClientProtocolException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import app.petstore.user.ui.DashboardPage;
 import app.petstore.user.ui.UIUtils;
+import app.petstore.user.ui.UserServiceUI;
 
 import java.io.IOException;
 import java.net.URL;
 
-public class LoginTests {
-	private static final Logger logger = LogManager.getLogger(LoginTests.class);
+public class LoginTestsAndroid {
+	private static final Logger logger = LogManager.getLogger(LoginTestsAndroid.class);
 
 	private static WebDriver driver;
 	private static LoginPageAndroid loginPage;
+
+	@BeforeSuite
+	public void testsSettings() throws ClientProtocolException, IOException {
+		UserServiceUI.createNewUserForTests("test11", "1234");
+	}
 
 	@BeforeTest
 	public void setUp() throws IOException, InterruptedException {
@@ -38,20 +46,28 @@ public class LoginTests {
 	}
 
 	@Test
-	public static void loginValidTest() throws InterruptedException, IOException {
-		UIUtils.takeScreenshot("login-page before valid inputs", driver);
-		DashboardPage dashboardPage = loginPage.submit("test111", "1234");
+	public static void validInputs() throws InterruptedException, IOException {
+		DashboardPage dashboardPage = loginPage.login("test11", "1234");
 		Assert.assertTrue(dashboardPage.isSignoutButtonExist());
 		UIUtils.takeScreenshot("login succesfully", driver);
 	}
 
 	@Test
-	public static void loginNotValidTest() throws InterruptedException, IOException {
-		UIUtils.takeScreenshot("login-page before not valid inputs", driver);
-		logger.info("login-page before not valid inputs");
-		DashboardPage dashboardPage = loginPage.submit("test11111", "1234");
-		Assert.assertTrue(dashboardPage.isSignoutButtonExist());
-		UIUtils.takeScreenshot("login failed", driver);
+	public static void inValidUsername() throws InterruptedException, IOException {
+		logger.info("start test - login with Invalid username - should fail");
+		DashboardPage dashboardPage = loginPage.login("test11111", "1234");
+		Assert.assertFalse(dashboardPage.isSignoutButtonExist());
+		UIUtils.takeScreenshot("login failed as expectd", driver);
+		logger.info("login failed as expected with invalid username");
+	}
+
+	@Test
+	public static void emptyUsernameAndPassword() throws InterruptedException, IOException {
+		logger.info("start test - empty inputs login should fail");
+		DashboardPage dashboardPage = loginPage.login("", "");
+		Assert.assertFalse(dashboardPage.isSignoutButtonExist());
+		UIUtils.takeScreenshot("login failed as expectd", driver);
+		logger.info("login failed as expected with empty username and password");
 	}
 
 	@AfterTest

@@ -19,13 +19,13 @@ import app.petstore.pet.api.CreatePetResponse;
 import app.petstore.pet.api.PetService;
 import app.petstore.user.api.CreateUserRequest;
 import app.petstore.user.api.GetUserResponse;
-import app.petstore.user.api.UserService;
+import app.petstore.user.api.UserServiceAPI;
 
 public class UserTests {
 
 	@Test
 	public static void createUser() throws ClientProtocolException, IOException, URISyntaxException {
-		UserService userService = new UserService();
+		UserServiceAPI userService = new UserServiceAPI();
 
 		CreateUserRequest request = new CreateUserRequest(2,"userNameTest","itzik","vaknin","123@test.com","1234","054-66666",4);
 		CloseableHttpResponse response = userService.createUser(request);

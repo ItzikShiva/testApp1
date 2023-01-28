@@ -13,10 +13,7 @@ public class LoginPageAndroid extends LoginPage {
 	}
 
 	@Override
-	public DashboardPage submit(String username, String password) {
-		usernameField.sendKeys(username);
-		passwordField.clear();
-		passwordField.sendKeys(password);
+	public DashboardPage submit() {
 		submitButton.sendKeys(Keys.ENTER);
 		return new DashboardPage(driver);
 	}

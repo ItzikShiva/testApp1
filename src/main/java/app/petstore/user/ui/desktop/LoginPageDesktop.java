@@ -12,10 +12,7 @@ public class LoginPageDesktop extends LoginPage {
 	}
 
 	@Override
-	public DashboardPage submit(String username, String password) {
-		usernameField.sendKeys(username);
-		passwordField.clear();
-		passwordField.sendKeys(password);
+	public DashboardPage submit() {
 		submitButton.click();
 		return new DashboardPage(driver);
 	}
