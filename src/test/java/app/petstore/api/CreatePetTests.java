@@ -14,11 +14,11 @@ import org.testng.Reporter;
 
 import com.google.gson.Gson;
 
-import API.petStore.Tag;
-import API.petStore.pet.Category;
-import API.petStore.pet.CreatePetRequest;
-import API.petStore.pet.CreatePetResponse;
-import API.petStore.pet.PetService;
+import app.petstore.api.Tag;
+import app.petstore.pet.api.Category;
+import app.petstore.pet.api.CreatePetRequest;
+import app.petstore.pet.api.CreatePetResponse;
+import app.petstore.pet.api.PetService;
 
 
 public class CreatePetTests {

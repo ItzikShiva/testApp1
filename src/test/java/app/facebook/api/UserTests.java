@@ -20,10 +20,10 @@ import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 
-import API.facebook.user.Field;
-import API.facebook.user.GetAccessTokenResponse;
-import API.facebook.user.GetMetadataResponse;
-import API.facebook.user.UserService;
+import app.facebook.user.api.Field;
+import app.facebook.user.api.GetAccessTokenResponse;
+import app.facebook.user.api.GetMetadataResponse;
+import app.facebook.user.api.UserService;
 
 public class UserTests extends FacebookBaseTest {
 		

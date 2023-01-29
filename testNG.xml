@@ -17,7 +17,8 @@
 			<class name="app.petstore.api.UpdatePetTests" />
 			<class name="app.petstore.api.UserTests" />
 			<class name="app.petstore.api.StoreTests" />
-			<class name="app.petstore.user.ui.UserTests" />
+			<class name="app.petstore.user.ui.desktop.UserTests" />
+			<class name="app.petstore.user.ui.android.LoginTests" />
 		</classes>
 	</test>
 </suite>
