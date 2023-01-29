@@ -22,12 +22,16 @@ import org.apache.logging.log4j.LogManager;
 public class LoginTestsDesktop {
 	private static final Logger logger = LogManager.getLogger(LoginTestsDesktop.class);
 
-	static WebDriver driver;
-	static LoginPageDesktop loginPage;
+	private static WebDriver driver;
+	private static LoginPageDesktop loginPage;
+
+	// TODO - ask, i want to take this vars up, should be extends "BaseTestUI"?
+	private static String username = "test11";
+	private static String password = "1234";
 
 	@BeforeSuite
 	public void testsSettings() throws ClientProtocolException, IOException {
-		UserServiceUI.createNewUserForTests("test11", "1234");
+		UserServiceUI.createNewUserForTests(username, password);
 	}
 
 	@BeforeMethod
@@ -42,7 +46,7 @@ public class LoginTestsDesktop {
 
 	@Test
 	public static void validInputs() throws InterruptedException, IOException {
-		DashboardPage dashboardPage = loginPage.login("test11", "1234");
+		DashboardPage dashboardPage = loginPage.login(username, password);
 		Assert.assertTrue(dashboardPage.isSignoutButtonExist());
 		UIUtils.takeScreenshot("login succesfully", driver);
 	}

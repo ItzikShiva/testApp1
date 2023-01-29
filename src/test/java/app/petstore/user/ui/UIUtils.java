@@ -13,6 +13,7 @@ import org.testng.Reporter;
 
 import io.appium.java_client.android.AndroidDriver;
 
+
 public class UIUtils {
 	public static String basgeURI = "https://petstore.octoperf.com/actions/Account.action?signonForm=";
 

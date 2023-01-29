@@ -25,10 +25,12 @@ public class LoginTestsAndroid {
 
 	private static WebDriver driver;
 	private static LoginPageAndroid loginPage;
+	private static String username = "test11";
+	private static String password = "1234";
 
 	@BeforeSuite
 	public void testsSettings() throws ClientProtocolException, IOException {
-		UserServiceUI.createNewUserForTests("test11", "1234");
+		UserServiceUI.createNewUserForTests(username, password);
 	}
 
 	@BeforeTest
@@ -47,7 +49,7 @@ public class LoginTestsAndroid {
 
 	@Test
 	public static void validInputs() throws InterruptedException, IOException {
-		DashboardPage dashboardPage = loginPage.login("test11", "1234");
+		DashboardPage dashboardPage = loginPage.login(username, password);
 		Assert.assertTrue(dashboardPage.isSignoutButtonExist());
 		UIUtils.takeScreenshot("login succesfully", driver);
 	}
